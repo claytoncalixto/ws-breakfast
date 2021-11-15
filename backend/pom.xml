@@ -8,11 +8,11 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.sds3</groupId>
-	<artifactId>dsvendas</artifactId>
+	<groupId>com.wl</groupId>
+	<artifactId>breakfast</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dsvendas</name>
-	<description>Projeto desenvolvido na Semana Spring React da DevSuperior 3.0</description>
+	<name>v</name>
+	<description>Projeto desenvolvido para o Desafio Unidac - Grupo WL</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
