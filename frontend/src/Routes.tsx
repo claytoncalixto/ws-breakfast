@@ -3,7 +3,7 @@ import Dashboard from 'pages/Dashboard';
 import Home from 'pages/Home';
 import Register from 'pages/Register';
 import { Switch } from "react-native";
-import { BrowserRouter, Route  } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const Routes = () => {
     return (

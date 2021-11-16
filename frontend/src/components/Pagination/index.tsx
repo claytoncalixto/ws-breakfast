@@ -1,7 +1,7 @@
-import { SalePage } from "types/breakfast";
+import { BreakfastPage } from "types/breakfast";
 
 type Props = {
-    page: SalePage;
+    page: BreakfastPage;
     onPageChange: Function;
 }
 const Pagination = ({ page, onPageChange }: Props) => {
