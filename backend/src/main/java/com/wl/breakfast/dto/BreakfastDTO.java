@@ -10,7 +10,7 @@ public class BreakfastDTO {
 	private String options;
 	private LocalDate date;
 
-	private UserDTO userDTO;
+	private UserDTO user;
 	
 	public BreakfastDTO (){
 	}
@@ -19,14 +19,14 @@ public class BreakfastDTO {
 		this.id = id;
 		this.options = options;
 		this.date = date;
-		this.userDTO = userDTO;
+		this.user = userDTO;
 	}
 	
 	public BreakfastDTO(Breakfast entity) {
 		id = entity.getId();
 		options = entity.getOptions();
 		date = entity.getDate();
-		userDTO = new UserDTO(entity.getUser());
+		user = new UserDTO(entity.getUser());
 	}
 
 	public Long getId() {
@@ -54,10 +54,10 @@ public class BreakfastDTO {
 	}
 
 	public UserDTO getUserDTO() {
-		return userDTO;
+		return user;
 	}
 
 	public void setUserDTO(UserDTO userDTO) {
-		this.userDTO = userDTO;
+		this.user = userDTO;
 	}	
 }
