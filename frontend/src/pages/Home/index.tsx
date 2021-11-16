@@ -1,5 +1,6 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
+import Access from "pages/Access";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
                     <hr />
                     <p>Esta aplicação consiste em organizar os insumos e produtos trazidos pelos colaboradores do Grupo WL.</p>
                     <Link className="btn btn-primary btn-lg" to="/login">
-                        Acessar
+                       <Access />
                     </Link>
                 </div>
             </div>
