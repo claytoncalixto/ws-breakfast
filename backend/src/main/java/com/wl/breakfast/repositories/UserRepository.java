@@ -6,5 +6,7 @@ import com.wl.breakfast.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Long>{
 
+	User findByEmail(String email);
+
 }
   

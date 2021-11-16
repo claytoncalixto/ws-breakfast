@@ -1,13 +1,41 @@
 
+import Access from 'pages/Access';
+import Dashboard from 'pages/Dashboard';
+import Home from 'pages/Home';
+import Register from 'pages/Register';
+import { Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+
+
 
 const Routes = () => {
-    return (
-        <div>
-      <h1 className="text-primary">DevSuperior!</h1>
+  return (
+    <BrowserRouter>
+
+      <Switch>
+
+        <Route path="/" >
+          <Home />
+        </Route>
+
+        <Route path="/dashboard">
+          <Dashboard />
+        </Route>
+
+        <Route path="/access" >
+          <Access />
+        </Route>
+
+        <Route path="/register" >
+          <Register />
+        </Route>
+
+      </Switch>
       
-      </div>
-        
-    );
+    </BrowserRouter>
+
+  );
 }
 
 export default Routes;
