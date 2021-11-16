@@ -9,7 +9,8 @@ const Dashboard = () => {
         <>
             <NavBar />
             <div className="container">
-                <h1 className="text-primary py-3">Dashboard breakfast</h1>                
+                <h1 className="text-primary py-3">Dashboard breakfast</h1>   
+                             
                 <div className="py-3">
                     <h2 className="text-primary">Todas os breakefast</h2>
                 </div>

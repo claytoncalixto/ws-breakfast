@@ -1,4 +1,4 @@
-import { SalePage } from "types/sale";
+import { SalePage } from "types/breakfast";
 
 type Props = {
     page: SalePage;

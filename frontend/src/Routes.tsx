@@ -1,17 +1,28 @@
+import Access from 'pages/Access';
 import Dashboard from 'pages/Dashboard';
 import Home from 'pages/Home';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Register from 'pages/Register';
+import { Switch } from "react-native";
+import { BrowserRouter, Route  } from "react-router-dom";
 
 const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact>
+                <Route path="/" >
                   <Home />
                 </Route>
 
                 <Route path="/dashboard" >
                     <Dashboard />
+                </Route>
+
+                <Route path="/access" >
+                    <Access />
+                </Route>
+
+                <Route path="/register" >
+                    <Register />
                 </Route>
             </Switch>
         </BrowserRouter>

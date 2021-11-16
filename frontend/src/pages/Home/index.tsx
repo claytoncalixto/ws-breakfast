@@ -9,7 +9,7 @@ const Home = () => {
             <div className="container">
                 <div className="jumbotron">
                     <h1 className="display-4">WL-Breakfast</h1>
-                    <p className="lead">Organiza e agenda os evento para café da manhã no Grupo WL</p>
+                    <p className="lead">Organiza e agenda os eventos para café da manhã no Grupo WL</p>
                     <hr />
                     <p>Esta aplicação consiste em organizar os insumos e produtos trazidos pelos colaboradores do Grupo WL.</p>
                     <Link className="btn btn-primary btn-lg" to="/login">
