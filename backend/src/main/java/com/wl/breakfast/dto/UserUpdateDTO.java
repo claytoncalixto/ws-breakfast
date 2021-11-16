@@ -1,6 +1,6 @@
 package com.wl.breakfast.dto;
 
-import com.claytoncalixto.dscatalog.services.validation.UserUpdateValid;
+import com.wl.breakfast.services.validation.UserUpdateValid;
 
 @UserUpdateValid
 public class UserUpdateDTO extends UserDTO {	
