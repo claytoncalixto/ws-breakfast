@@ -6,18 +6,18 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.wl.breakfast.dto.SellerDTO;
+import com.wl.breakfast.dto.UserDTO;
 import com.wl.breakfast.entities.Seller;
-import com.wl.breakfast.repositories.SellerRepository;
+import com.wl.breakfast.repositories.UserRepository;
 
 @Service
-public class SellerService {
+public class UserService {
 
 	@Autowired
-	private SellerRepository repository;
+	private UserRepository repository;
 	
-	public List<SellerDTO> findAll(){
+	public List<UserDTO> findAll(){
 		List<Seller> result = repository.findAll();
-		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
+		return result.stream().map(x -> new UserDTO(x)).collect(Collectors.toList());
 	}
 }

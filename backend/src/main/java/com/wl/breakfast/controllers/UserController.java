@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wl.breakfast.dto.SellerDTO;
-import com.wl.breakfast.services.SellerService;
+import com.wl.breakfast.dto.UserDTO;
+import com.wl.breakfast.services.UserService;
 
 @RestController
 @RequestMapping(value = "/sellers")
-public class SellerController {
+public class UserController {
 	
 	@Autowired
-	private SellerService service;
+	private UserService service;
 	
 	@GetMapping
-	public ResponseEntity<List<SellerDTO>> findAll(){
-		List<SellerDTO> list = service.findAll();
+	public ResponseEntity<List<UserDTO>> findAll(){
+		List<UserDTO> list = service.findAll();
 		return ResponseEntity.ok(list);
 	}
 

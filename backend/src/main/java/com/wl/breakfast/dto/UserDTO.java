@@ -2,23 +2,23 @@ package com.wl.breakfast.dto;
 
 import java.io.Serializable;
 
-import com.wl.breakfast.entities.Seller;
+import com.wl.breakfast.entities.User;
 
-public class SellerDTO implements Serializable {
+public class UserDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String name;
 	
-	public SellerDTO() {
+	public UserDTO() {
 	}
 
-	public SellerDTO(Long id, String name) {
+	public UserDTO(Long id, String name) {
 		this.id = id;
 		this.name = name;
 	}
 	
-	public SellerDTO(Seller entity) {
+	public UserDTO(User entity) {
 		this.id = entity.getId();
 		this.name = entity.getName();
 	}
