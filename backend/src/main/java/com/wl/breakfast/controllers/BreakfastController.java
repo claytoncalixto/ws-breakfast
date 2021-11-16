@@ -12,7 +12,7 @@ import com.wl.breakfast.dto.BreakfastDTO;
 import com.wl.breakfast.services.BreakfastService;
 
 @RestController
-@RequestMapping(value = "/sales")
+@RequestMapping(value = "/breakfasts")
 public class BreakfastController {
 	
 	@Autowired

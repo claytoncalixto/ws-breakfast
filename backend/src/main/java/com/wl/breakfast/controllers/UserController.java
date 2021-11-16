@@ -12,7 +12,7 @@ import com.wl.breakfast.dto.UserDTO;
 import com.wl.breakfast.services.UserService;
 
 @RestController
-@RequestMapping(value = "/sellers")
+@RequestMapping(value = "/users")
 public class UserController {
 	
 	@Autowired
